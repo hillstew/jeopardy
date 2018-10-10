@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: ‘Raleway’, sans-serif;
+}
+
+ul {
+  list-style-position: inside;
+  list-style: none;
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.start-btn, .end-btn {
+  margin: 20px;
+}
+
+.categories li{
+  text-align: center;
+  border: solid blue 1px;
+  padding: 20px 40px;
+  margin: 20px 30px;
+  font-size: 2em;
+}
+
+.players-list {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2em;
+  margin: 40px;
+}
+
+header {
+  text-align: center;
+  font-size: 4em;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
