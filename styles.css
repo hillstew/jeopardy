@@ -1,11 +1,21 @@
 body {
   margin: 0;
-  font-family: ‘Raleway’, sans-serif
+  font-family: ‘Raleway’, sans-serif;
 }
 
 ul {
   list-style-position: inside;
   list-style: none;
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.start-btn, .end-btn {
+  margin: 20px;
 }
 
 .categories li{
