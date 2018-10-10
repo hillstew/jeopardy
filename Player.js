@@ -1,7 +1,7 @@
 class Player {
   constructor(name, score) {
     this.name = name,
-    this.score = score
+    this.score = 0
   }
 
   submitAnswer() {
