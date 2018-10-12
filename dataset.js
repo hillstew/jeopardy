@@ -502,9 +502,6 @@ const data = {
       pointValue: 500,
       categoryId: 5
     },
-
-
-
     { 
       question: 'IDEA is the Individuals with these Education Act, formerly the Education For All Handicapped Children Act',
       answer: 'Disabilities',
@@ -535,11 +532,6 @@ const data = {
       pointValue: 500,
       categoryId: 4
     },
-
-
-
-
-
     { 
       question: 'A 1992 law introduced by Sen. Cranston aimed to reduce the use of paint containing too much of this element',
       answer: 'lead',
@@ -569,10 +561,7 @@ const data = {
       answer: 'a vector',
       pointValue: 500,
       categoryId: 3
-    },
-
-
-    
+    }, 
     { 
       question: 'Organic chemistry focuses specifically on this element\'s compounds & their reactions',
       answer: 'carbon',
@@ -725,3 +714,5 @@ const data = {
     }
   ]
 };
+
+export default data;
