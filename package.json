@@ -1,0 +1,29 @@
+{
+  "name": "jeopardy",
+  "version": "1.0.0",
+  "description": "[DTR](https://gist.github.com/hillstew/b87faac4bebcfda08d874fcb6ddf3d95)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha", 
+    "eslint": "./node_modules/eslint/bin/eslint.js ./lib/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hillstew/jeopardy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hillstew/jeopardy/issues"
+  },
+  "homepage": "https://github.com/hillstew/jeopardy#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-spies": "^1.0.0",
+    "mocha": "^5.2.0"
+  }
+}

@@ -1,0 +1,1 @@
+global.domUpdates = require('../javascript/dom-updates.js');
