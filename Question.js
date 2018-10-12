@@ -18,3 +18,4 @@ class DailyDouble extends Question {
     
   }
 }
+
