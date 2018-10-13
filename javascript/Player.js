@@ -13,4 +13,3 @@ class Player {
   updateScore() {
   }
 }
-

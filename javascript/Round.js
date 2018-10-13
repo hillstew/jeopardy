@@ -1,5 +1,3 @@
-import data from './dataset.js'
-
 
 class Round {
   constructor() {
@@ -11,12 +9,12 @@ class Round {
     this.data = data
   }
 
-  this.createRound();
+// createRound();
 
-  createRound() {
-    const categories = this.createCategories();
-    const categoryIds = this.getCategoryIds(categories);
-  }
+createRound() {
+  const categories = this.createCategories();
+  const categoryIds = this.getCategoryIds(categories);
+}
 
 
   createCategories() {
