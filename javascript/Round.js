@@ -1,4 +1,3 @@
-
 class Round {
   constructor() {
     this.turn = 1
@@ -11,10 +10,10 @@ class Round {
 
 // createRound();
 
-createRound() {
-  const categories = this.createCategories();
-  const categoryIds = this.getCategoryIds(categories);
-}
+  createRound() {
+    const categories = this.createCategories();
+    const categoryIds = this.getCategoryIds(categories);
+  }
 
 
   createCategories() {
@@ -22,7 +21,8 @@ createRound() {
     let randoms = [];
       for (var i = 0; i < categoryKeys.length; i++) {
 
-        let rand = categoryKeys[Math.floor(Math.random() * categoryKeys.length)]
+        let rand = categoryKeys[Math.floor(Math.random() 
+                    * categoryKeys.length)]
           if (randoms.indexOf(rand) === -1) {
             randoms.push(rand)
           }  if (randoms.length > 4) {
@@ -37,6 +37,6 @@ createRound() {
     return categories.map((category) => {
       return this.data.categories[category]
     })
-  }
+}
 
 }
