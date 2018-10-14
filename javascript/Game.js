@@ -6,9 +6,7 @@ class Game {
     this.categories = []
   }
 
-  createPlayers() {
-    let player1 = new Player('')
-  }
+
 
 
   start() {

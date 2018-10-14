@@ -1,4 +1,5 @@
 body {
+  background-color: #001C43;
   margin: 0;
   font-family: ‘Raleway’, sans-serif;
 }
@@ -20,11 +21,16 @@ ul {
 
 .categories li{
   text-align: center;
-  border: solid blue 1px;
+  background-color: #112957;
+  /*border: solid blue 1px;*/
+  border-radius: 15px;
+  color: #E0E3EA;
   padding: 20px 40px;
   margin: 20px 30px;
   font-size: 2em;
 }
+
+
 
 .players-list {
   display: flex;
