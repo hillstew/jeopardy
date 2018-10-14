@@ -1,7 +1,13 @@
 body {
   background-color: #001C43;
   margin: 0;
-  font-family: ‘Raleway’, sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+header {
+  color: #ff7072;
+  text-align: center;
+  font-size: 4em;
 }
 
 ul {
@@ -16,33 +22,55 @@ ul {
 }
 
 .start-btn, .end-btn {
-  margin: 20px;
+  border: transparent;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 20px;
+  padding-left: 5px;
+  width: 75px;
 }
 
-.categories li{
+.start-btn:hover, 
+.end-btn:hover {
+  background-color: #ff7072;
+  cursor: pointer;
+}
+
+.categories li {
   text-align: center;
   background-color: #112957;
-  /*border: solid blue 1px;*/
-  border-radius: 15px;
-  color: #E0E3EA;
+  border-radius: 20px;
+  color: #e6e7ec;
   padding: 20px 40px;
-  margin: 20px 30px;
+  margin: 20px 20px;
   font-size: 2em;
 }
 
-
+.categories li:hover {
+  background-color: #0063ff;
+  color: #00183A;
+  cursor: pointer;
+}
 
 .players-list {
   display: flex;
-  justify-content: space-around;
   font-size: 1.2em;
+  justify-content: center;
   margin: 40px;
 }
 
-header {
-  text-align: center;
-  font-size: 4em;
+.players {
+  border: transparent;
+  border-radius: 5px;
+  display: inline;
+  font-size: 16px;
+  height: 30px;
+  margin: 0 50px;
+  padding-left: 5px;
+  width: 150px;
 }
+
+
 
 section {
   display: flex;

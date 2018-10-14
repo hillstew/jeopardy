@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jeopardy!</title>
+  <title>JEOPARDY!</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link href=“https://fonts.googleapis.com/css?family=Raleway:400,400i,700” rel=“stylesheet”>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,900" rel="stylesheet">
 </head>
 <body>
-  <header>Jeopardy!</header>
-  <div class="btn-wrap" role="button wrapper for styling">
-    <button class="start-btn">Start</button>
-    <p>Round1</p>
-    <button class="end-btn">End</button>
-  </div>
+  <header>JEOPARDY!</header>
+  
   <ul class="players-list">
-    <li class="player-one-card">Player1</li>
-    <input class='player-one' name="Player 1">
-    <li class="player-two-card">Player2</li>
-    <input class='player-two' name="Player 2">
-    <li class="player-three-card">Player3</li>
-    <input class='player-three' name="Player 3">
+    <li class="player-one-card"></li>
+    <input class='player-one players' placeholder="PLAYER 1" name="Player 1">
+    <li class="player-two-card"></li>
+    <input class='player-two players' placeholder="PLAYER 2" name="Player 2">
+    <li class="player-three-card"></li>
+    <input class='player-three players' placeholder="PLAYER 3" name="Player 3">
   </ul>
+  <div class="btn-wrap" role="button wrapper for styling">
+    <button class="start-btn">start</button>
+    <p>Round1</p>
+    <button class="end-btn">end</button>
+  </div>
   <section>
   <ul id="category-1" class="categories">
     <li>category</li>
@@ -56,6 +57,7 @@
 </section>
 
 </body>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
