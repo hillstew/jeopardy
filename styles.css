@@ -18,27 +18,36 @@ ul {
 .btn-wrap {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
 
 .start-btn, .end-btn {
   border: transparent;
   border-radius: 5px;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
-  height: 20px;
-  padding-left: 5px;
+  height: 30px;
+  margin: 5px;
   width: 75px;
 }
 
 .start-btn:hover, 
 .end-btn:hover {
-  background-color: #ff7072;
   cursor: pointer;
+  color: #FFFFFF
+}
+
+.start-btn:hover {
+  background-color: green
+}
+
+.end-btn:hover {
+  background-color: red;
 }
 
 .categories li {
   text-align: center;
   background-color: #112957;
+  border: 2px solid transparent;
   border-radius: 20px;
   color: #e6e7ec;
   padding: 20px 40px;
@@ -47,8 +56,8 @@ ul {
 }
 
 .categories li:hover {
-  background-color: #0063ff;
-  color: #00183A;
+  border: 2px solid #ff7072;
+  color: #ff7072;
   cursor: pointer;
 }
 
@@ -56,7 +65,7 @@ ul {
   display: flex;
   font-size: 1.2em;
   justify-content: center;
-  margin: 40px;
+  margin: 20px;
 }
 
 .players {
@@ -67,10 +76,19 @@ ul {
   height: 30px;
   margin: 0 50px;
   padding-left: 5px;
-  width: 150px;
 }
-
-
+.round-display {
+  background-color: #ff7072;
+  border-radius: 5px;
+  color: #FFFFFF;
+  height: 40px;
+  font-size: 1.4em;
+  font-weight: 900;
+  margin: 0 auto;
+  padding-top: 10px;
+  text-align: center;
+  width: 130px;
+}
 
 section {
   display: flex;
