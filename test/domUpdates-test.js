@@ -1,1 +1,1 @@
-global.domUpdates = require('../javascript/dom-updates.js');
+global.domUpdates = require('../javascript/domUpdates.js');

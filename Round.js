@@ -1,3 +1,6 @@
+import data from './dataset.js'
+
+
 class Round {
   constructor() {
     this.turn = 1
@@ -8,7 +11,7 @@ class Round {
     this.data = data
   }
 
-// createRound();
+  this.createRound();
 
   createRound() {
     const categories = this.createCategories();
@@ -21,8 +24,7 @@ class Round {
     let randoms = [];
       for (var i = 0; i < categoryKeys.length; i++) {
 
-        let rand = categoryKeys[Math.floor(Math.random() 
-                    * categoryKeys.length)]
+        let rand = categoryKeys[Math.floor(Math.random() * categoryKeys.length)]
           if (randoms.indexOf(rand) === -1) {
             randoms.push(rand)
           }  if (randoms.length > 4) {
@@ -37,6 +39,6 @@ class Round {
     return categories.map((category) => {
       return this.data.categories[category]
     })
-}
+  }
 
 }
