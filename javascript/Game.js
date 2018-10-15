@@ -6,11 +6,10 @@ class Game {
     this.categories = []
   }
 
-
-
-
   start() {
     this.createCategories()
+    // domUpdates.displayPlayers(this.players)
+    domUpdates.displayCategories(...this.categories)
   }
 
   reset() {
@@ -23,7 +22,7 @@ class Game {
   }
 
   createCategories() {
-    let categoryKeys = Object.entries(data.categories);
+    let categoryKeys = Object.keys(data.categories);
       let randoms = [];
         for (var i = 0; i < categoryKeys.length; i++) {
 
