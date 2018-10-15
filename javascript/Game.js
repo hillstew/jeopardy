@@ -1,15 +1,16 @@
 class Game {
   constructor(round, players, winner) {
-    this.round = 0,
-    this.players = [],
+    this.roundNumber = 0,
+    this.players = players,
     this.winner = winner,
     this.categories = []
+    this.round = new Round();
   }
 
   start() {
     this.createCategories()
     // domUpdates.displayPlayers(this.players)
-    domUpdates.displayCategories(...this.categories)
+    domUpdates.displayCategories(this.categories)
   }
 
   reset() {
@@ -19,6 +20,11 @@ class Game {
   }
 
   declareWinner() {
+  }
+
+  startNewRound() {
+    this.roundNumber++;
+    this.round = new Round();
   }
 
   createCategories() {
@@ -33,11 +39,9 @@ class Game {
               randoms.pop()
             }
           }
-      return this.categories.push(randoms);
+      return this.categories.push(...randoms);
     }
   }
-
-
 
 
 if (typeof module !== 'undefined') {
