@@ -1,9 +1,9 @@
 class Question {
   constructor(catergoryId, answer, question, pointValue) {
-    this.catergoryId = catergoryId
-    this.answer = answer
-    this.question = question
-    this.pointValue = pointValue
+    this.catergoryId = catergoryId;
+    this.answer = answer;
+    this.question = question;
+    this.pointValue = pointValue;
   }
 }
 

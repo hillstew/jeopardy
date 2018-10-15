@@ -7,6 +7,7 @@ const domUpdates = {
     playerTwoCard.innerText = player2.name;
     playerThreeCard.innerText = player3.name;
   },
+
   displayCategories(categories) {
     console.log(categories);
     $('.category-card-one').text(categories[0])
@@ -14,6 +15,8 @@ const domUpdates = {
     $('.category-card-three').text(categories[2])
     $('.category-card-four').text(categories[3])
   }
+
+  
 }
 
 

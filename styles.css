@@ -13,11 +13,13 @@ header {
 ul {
   list-style-position: inside;
   list-style: none;
+  padding-left: 0;
 }
 
 .btn-wrap {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .start-btn, .end-btn {
@@ -84,7 +86,7 @@ ul {
   height: 40px;
   font-size: 1.4em;
   font-weight: 900;
-  margin: 0 auto;
+  margin: 10px;
   padding-top: 10px;
   text-align: center;
   width: 130px;
