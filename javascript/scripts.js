@@ -6,8 +6,8 @@ let game = new Game();
 
 
 $('.start-btn').on('click', () => {
-  createPlayers();
   game.start();
+  createPlayers();
 })
 
 createPlayers = () => {
