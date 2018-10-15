@@ -8,8 +8,6 @@ class Round {
     this.createRound();
   }
 
-// createRound();
-
 createRound() {
   this.categories = this.createCategories();
 
@@ -48,7 +46,7 @@ getQuestions(categories) {
   const cat = categories[catKey];
   let current = 100;
 
-  const bunches = cat.reduce((acc, data) => {
+  const clues = cat.reduce((acc, data) => {
     if (data.pointValue === current) {
       current = current + 100
       acc.push(data)
@@ -56,15 +54,14 @@ getQuestions(categories) {
     return acc;
   }, [])
 
-  if(!categoryQuestions[catKey]) categoryQuestions[catKey] = {};
-  categoryQuestions[catKey].questions = bunches
-  });
+  if(!categoryQuestions[catKey])
+    categoryQuestions[catKey] = {};
+    categoryQuestions[catKey].questions = clues;
+  })
+}
 }
 
-// getCategoryIds(categories) {
-//   return categories.map((category) => {
-//     return this.data.categories[category]
-//   });
-// }
+if (typeof module !== 'undefined') {
+  module.exports = Round;
+}
 
-// }
