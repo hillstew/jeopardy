@@ -10,7 +10,7 @@ header {
   font-size: 4em;
 }
 
-ul {
+.categories {
   list-style-position: inside;
   list-style: none;
   padding-left: 0;
@@ -46,18 +46,35 @@ ul {
   background-color: red;
 }
 
-.categories li {
-  text-align: center;
-  background-color: #112957;
-  border: 2px solid transparent;
-  border-radius: 20px;
-  color: #e6e7ec;
-  padding: 20px 40px;
-  margin: 20px 20px;
-  font-size: 2em;
+.category-cards {
+  font-size: 1.2em;
 }
 
-.categories li:hover {
+.question-cards {
+  background-color: #112957;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  color: #e6e7ec;
+  font-size: 2em;
+  margin: 20px 20px;
+  padding: 20px 40px;
+  text-align: center;
+  width: 200px;
+}
+
+.categories li {
+  background-color: #112957;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  color: #e6e7ec;
+  font-size: 2em;
+  margin: 20px 20px;
+  padding: 20px 40px;
+  text-align: center;
+  width: 150px;
+}
+
+.question-cards:hover {
   border: 2px solid #ff7072;
   color: #ff7072;
   cursor: pointer;

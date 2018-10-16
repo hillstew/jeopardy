@@ -10,7 +10,6 @@ class Round {
 
 createRound() {
   this.categories = this.createCategories();
-
   const categoryIds = this.getCategoryIds(categories);
 }
 
@@ -25,7 +24,6 @@ createCategories() {
           randoms.pop()
         }
       }
-  
   return randoms;
 }
 
@@ -53,32 +51,30 @@ getQuestions(categories) {
     return acc;
   }, [])
 
-  if(!categoryQuestions[catKey])
-    categoryQuestions[catKey] = {};
-    categoryQuestions[catKey].questions = clues;
-  })
+    if(!categoryQuestions[catKey])
+      categoryQuestions[catKey] = {};
+      categoryQuestions[catKey].questions = clues;
+    })
+  }
+createCategories() {
+  let categoryKeys = Object.keys(this.data.categories);
+  let randoms = [];
+  for (var i = 0; i < categoryKeys.length; i++) {
+
+    let rand = categoryKeys[Math.floor(Math.random() 
+                  * categoryKeys.length)]
+    if (randoms.indexOf(rand) === -1) {
+      randoms.push(rand)
+    }  if (randoms.length > 4) {
+      randoms.pop()
+    }
+  }
+  
+  return randoms;
 }
 }
 
 if (typeof module !== 'undefined') {
   module.exports = Round;
 }
-
-
-  createCategories() {
-    let categoryKeys = Object.keys(this.data.categories);
-    let randoms = [];
-    for (var i = 0; i < categoryKeys.length; i++) {
-
-      let rand = categoryKeys[Math.floor(Math.random() 
-                    * categoryKeys.length)]
-      if (randoms.indexOf(rand) === -1) {
-        randoms.push(rand)
-      }  if (randoms.length > 4) {
-        randoms.pop()
-      }
-    }
-    
-    return randoms;
-  }
 
