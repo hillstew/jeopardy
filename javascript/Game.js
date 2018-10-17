@@ -52,7 +52,7 @@ class Game {
       if (question.pointValue === pointValue
           && question.categoryId === data.categories[category]) {
         $('.question-window').css('z-index', '1')
-        question.question = $('question-window').text()
+        question.question = $('.question-clue').text()
       }
     })
   }
