@@ -116,12 +116,30 @@ section {
 }
 
 .question-window {
+  align-items: center;
   background-color: tomato;
   border: 5px solid tomato;
+  display: flex;
   height: 500px;
+  justify-content: center;
   position: absolute;
-  width: 100%;
-  z-index: -1;
-  /*left: 35%;*/
   top: 35%;
+  width: 90%;
+  z-index: -1;
+}
+
+.question-div {
+  display: flex;
+}
+
+.answer-input {
+  border: none;
+  font-size: 20px;
+  height: 48px;
+  width: 300px;
+}
+
+.answer-btn {
+  border: none;
+  height: 50px;
 }

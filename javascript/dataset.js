@@ -19,7 +19,7 @@ const data = {
     'food': 9,
     'cableTV': 10
   },
-  clues: [ 
+  clues: [
     {
       question: "Scorecard Report\" & \"Peter Jacobsen Plugged In\" are seen on the sports channel devoted to this",
       pointValue: 100,
@@ -46,7 +46,7 @@ const data = {
     },
     {
       question: "What Sonya Fitzpatrick is, or the Animal Planet series on which she communicates with animals telepathically",
-      pointValue: 500,
+      pointValue: 400,
       answer: "The Pet Psychic",
       categoryId: 10
     },
@@ -110,8 +110,6 @@ const data = {
       answer: "Shelley Duvall",
       categoryId: 10
     },
-
-
     {
       question: "An energetic person is full of these, maybe the fava type",
       pointValue: 100,
@@ -202,9 +200,6 @@ const data = {
       answer: "the pit",
       categoryId: 9
     },
-
-
-
     {
       question: "About this city's 1906 earthquake, Jack London wrote, \"Day was trying to dawn through the smoke pall",
       pointValue: 100,
@@ -295,9 +290,6 @@ const data = {
       answer: "Chicago",
       categoryId: 8
     },
-
-
-
     {
       question: "Title of Sylvia Nasar's tale of \"The Life of Mathematical Genius and Nobel Laureate John Nash",
       pointValue: 100,
@@ -472,121 +464,121 @@ const data = {
       answer: "Washington Irving",
       categoryId: 6
     },
-    { 
+    {
       question: 'Go directly to jail',
       answer: 'Monopoly',
       pointValue: 100,
       categoryId: 5
     },
-    { 
+    {
       question: 'King me!',
       answer: 'Checkers',
       pointValue: 200,
       categoryId: 5
     },
-    { 
+    {
       question: 'Miss Scarlet in the library with the wrench',
       answer: 'Clue',
       pointValue: 300,
       categoryId: 5
     },
-    { 
+    {
       question: 'You sank my aircraft carrier!',
       answer: 'Battleship',
       pointValue: 400,
       categoryId: 5
     },
-    { 
+    {
       question: 'My wink is nearest the pot.  I\'ve won the squidge-off!',
       answer: 'tiddlywinks',
       pointValue: 500,
       categoryId: 5
     },
-    { 
+    {
       question: 'IDEA is the Individuals with these Education Act, formerly the Education For All Handicapped Children Act',
       answer: 'Disabilities',
       pointValue: 100,
       categoryId: 4
     },
-    { 
+    {
       question: '65 out of 100 students did the same as or worse than you if your grade is in the 65th of these',
       answer: 'percentile',
       pointValue: 200,
       categoryId: 4
     },
-    { 
+    {
       question: 'It\'s the rhyming term for the technique of teaching with only a blackboard to help you',
       answer: 'chalk talk/chalk and talk',
       pointValue: 300,
       categoryId: 4
     },
-    { 
+    {
       question: 'From the Latin for "to heal", it\'s the type of education that brings deficient students up to standard levels',
       answer: 'remedial',
       pointValue: 400,
       categoryId: 4
     },
-    { 
+    {
       question: 'These 2 words, denoting socioeconomically challenged, followed "A Nation" in a 1983 report\'s title',
       answer: 'At Risk',
       pointValue: 500,
       categoryId: 4
     },
-    { 
+    {
       question: 'A 1992 law introduced by Sen. Cranston aimed to reduce the use of paint containing too much of this element',
       answer: 'lead',
       pointValue: 100,
       categoryId: 3
     },
-    { 
+    {
       question: 'An effort lasting from 1985 to 1991 eliminated this paralytic illness from Latin America',
       answer: 'polio',
       pointValue: 200,
       categoryId: 3
     },
-    { 
+    {
       question: '(<a href="http://www.j-archive.com/media/2005-12-21_J_25.jpg" target="_blank">Hi!  I\'m CNN senior medical correspondent Dr. Sanjay Gupta.</a>)  I joined CNN in 2001 & reported on the biological attacks of this bacillus in the news that October',
       answer: 'anthrax',
       pointValue: 300,
       categoryId: 3
     },
-    { 
+    {
       question: 'Stanford\'s med school has a division of this, the study & control of disease in populations',
       answer: 'epidemiology',
       pointValue: 400,
       categoryId: 3
     },
-    { 
+    {
       question: 'Also a type of mathematical quantity, it\'s a term for disease-carrying critters like ticks',
       answer: 'a vector',
       pointValue: 500,
       categoryId: 3
-    }, 
-    { 
+    },
+    {
       question: 'Organic chemistry focuses specifically on this element\'s compounds & their reactions',
       answer: 'carbon',
       pointValue: 100,
       categoryId: 2
     },
-    { 
+    {
       question: 'If you\'re a steak & veggies creature, you\'re an omnivore, a combination of these other 2 basic "-vores',
       answer: 'carnivore and herbivore',
       pointValue: 200,
       categoryId: 2
     },
-    { 
+    {
       question: 'In humans this collection of nerves extends from the base of the skull to the second lumbar vertebra',
       answer: 'spinal cord',
       pointValue: 300,
       categoryId: 2
     },
-    { 
+    {
       question: '(<a href="http://www.j-archive.com/media/2009-04-28_DJ_22.wmv">Jimmy of the Clue Crew gets in his workout.</a>)  Physical activity increases both body temperature & this process in which food is converted to protein, carbs & fat & then used for energy',
       answer: 'metabolism',
       pointValue: 400,
       categoryId: 2
     },
-    { 
+    {
       question: 'Alimentary, my dear! waves of contractions moving swallowed food through the esophagus are called this',
       answer: 'peristalsis',
       pointValue: 500,
@@ -714,6 +706,10 @@ const data = {
     }
   ]
 };
+
+if (typeof module !== 'undefined') {
+  module.exports = data;
+}
 
 if (typeof module !== 'undefined') {
   module.exports = data;
