@@ -6,6 +6,9 @@ $('.start-btn').on('click', () => {
   game.createPlayers();
 })
 
+$('.answer-btn').on('click', game.removeWindow);
+
+
 $('.categories').on('click', (e) => {
   let category = $(e.target).siblings('.category-cards').text();
   let pointValue = parseInt($(event.target).text());
