@@ -13,7 +13,7 @@ class Question {
     if ($('.answer-input').val() === this.answer){
     $('.question-window').css('z-index', '-1');
     }
-    currentPlayer.changePlayer()
+    game.changePlayer(currentPlayer)
     currentPlayer.score += this.pointValue;
   }
 

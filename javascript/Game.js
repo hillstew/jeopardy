@@ -39,6 +39,17 @@ class Game {
     return this.categories.push(...randoms);
   }
 
+  changePlayer(player) {
+    let currentIndex = this.players.indexOf(player)
+    this.players[currentIndex].turn = false;
+    if ((this.players + 1) >= this.players.length) {
+      currentIndex = 0;
+    } else {
+      currentIndex += 1;
+    }
+    this.players[currentIndex].turn = true;
+  }
+
   getQuestions(categories) {
     this.questions = categories.reduce((array, category) => {
       let clues = data.clues.filter(clue => {
