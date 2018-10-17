@@ -24,11 +24,11 @@ class Game {
   createCategories() {
     let categoryKeys = Object.keys(data.categories);
     let randoms = [];
-      for (var i = 0; i < categoryKeys.length; i++) {
+    for (var i = 0; i < categoryKeys.length; i++) {
         let rand = categoryKeys[Math.floor(Math.random() * categoryKeys.length)]
         if (randoms.indexOf(rand) === -1) {
           randoms.push(rand)
-        }  if (randoms.length > 4) {
+        } if (randoms.length > 4) {
             randoms.pop()
           }
       }
@@ -44,7 +44,11 @@ class Game {
       return array;
     }, []).map(question => {
     return new Question(question)
-    }) 
+    });
+  }
+
+  removeWindow() {
+    $('.question-window').css('z-index', '-1')
   }
 
   matchQuestion(category, pointValue) {
@@ -52,9 +56,9 @@ class Game {
       if (question.pointValue === pointValue
           && question.categoryId === data.categories[category]) {
         $('.question-window').css('z-index', '1')
-        question.question = $('.question-clue').text()
+        $('.question-clue').text(question.question);
       }
-    })
+    });
   }
 }
 
