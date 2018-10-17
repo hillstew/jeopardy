@@ -11,10 +11,12 @@ class Question {
       return player.turn; 
     })
     if ($('.answer-input').val() === this.answer){
-    $('.question-window').css('z-index', '-1');
-    }
-    game.changePlayer(currentPlayer)
     currentPlayer.score += this.pointValue;
+    } else {
+      currentPlayer.score -= this.pointValue;
+    }
+    $('.question-window').css('z-index', '-1');
+    game.changePlayer(currentPlayer)
   }
 
 }
