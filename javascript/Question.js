@@ -5,8 +5,6 @@ class Question {
     this.question = clue.question;
     this.pointValue = clue.pointValue;
   }
-
-
 }
 
 class DailyDouble extends Question {

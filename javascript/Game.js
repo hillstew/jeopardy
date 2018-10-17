@@ -14,11 +14,14 @@ class Game {
   }
 
   createPlayers() {
-    let player1 = new Player(playerOne.value);
-    let player2 = new Player(playerTwo.value);
-    let player3 = new Player(playerThree.value);
-    domUpdates.displayPlayers(player1, player2, player3)
+    let playerOne = $('.player-one').val();
+    let playerTwo = $('.player-two').val();
+    let playerThree = $('.player-three').val();
+    let player1 = new Player(playerOne);
+    let player2 = new Player(playerTwo);
+    let player3 = new Player(playerThree);
     this.players.push(player1.name, player2.name, player3.name)
+    domUpdates.displayPlayers(player1, player2, player3)
   }
 
   createCategories() {
@@ -51,12 +54,12 @@ class Game {
     this.questions.find(question => {
       if (question.pointValue === pointValue
           && question.categoryId === data.categories[category]) {
-        $('.question-window').css('z-index', '1')
-        question.question = $('.question-clue').text()
-      }
-    })
+          $('.question-window').css('z-index', '1')
+          $('.question-clue').text(question.question)
+        }
+      })
+    }
   }
-}
 
 
 

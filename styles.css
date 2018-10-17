@@ -5,9 +5,17 @@ body {
 }
 
 header {
-  color: #ff7072;
+  color: tomato;
   text-align: center;
   font-size: 4em;
+}
+
+.players-cards {
+  border: 2px solid tomato;
+  border-radius: 20px;
+  height: 100px;
+  margin: 2%;
+  width: 200px;
 }
 
 .categories {
@@ -17,6 +25,7 @@ header {
 }
 
 .btn-wrap {
+  background-color: #001C43;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,13 +105,14 @@ header {
   margin: 0 50px;
   padding-left: 5px;
 }
+
 .round-display {
-  background-color: #ff7072;
+  background-color: tomato;
   border-radius: 5px;
   color: #FFFFFF;
-  height: 40px;
   font-size: 1.4em;
   font-weight: 900;
+  height: 40px;
   margin: 10px;
   padding-top: 10px;
   text-align: center;
@@ -118,12 +128,14 @@ section {
 .question-window {
   align-items: center;
   background-color: tomato;
-  border: 5px solid tomato;
+  border-radius: 20px;
   display: flex;
+  flex-direction: column;
   height: 500px;
   justify-content: center;
+  left: 5%;
   position: absolute;
-  top: 35%;
+  top: 40%;
   width: 90%;
   z-index: -1;
 }
@@ -132,14 +144,40 @@ section {
   display: flex;
 }
 
+.question-clue {
+  color: #112957;
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: 0;
+  padding: 0 5%;
+  text-align: center;
+}
+
 .answer-input {
   border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-family: 'Nunito', sans-serif;
   font-size: 20px;
   height: 48px;
-  width: 300px;
+  width: 400px;
 }
 
 .answer-btn {
+  background-color: #112957;
   border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #FFFFFF;
   height: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.4rem;
+  padding-top: 2px;
+  width: 200px;
+}
+
+.answer-btn:hover {
+  color: tomato;
+  cursor: pointer;
 }
