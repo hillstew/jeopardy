@@ -3,37 +3,22 @@ class Game {
     this.roundNumber = 0,
     this.players = [],
     this.winner = winner,
-    this.categories = []
-    // this.round = new Round();
+    this.categories = [],
+    this.questions = []
   }
 
   start() {
     this.createCategories()
-    // domUpdates.displayPlayers(this.players)
+    this.getQuestions(this.categories)
     domUpdates.displayCategories(this.categories)
   }
 
   createPlayers() {
-  let player1 = new Player(playerOne.value);
-  let player2 = new Player(playerTwo.value);
-  let player3 = new Player(playerThree.value);
-  domUpdates.displayPlayers(player1, player2, player3)
-  // What's the differene between this.players and game.players?
-  this.players.push(player1.name, player2.name, player3.name)
-  }
-
-  reset() {
-  }
-
-  updateRound() {
-  }
-
-  declareWinner() {
-  }
-
-  startNewRound() {
-    this.roundNumber++;
-    this.round = new Round();
+    let player1 = new Player(playerOne.value);
+    let player2 = new Player(playerTwo.value);
+    let player3 = new Player(playerThree.value);
+    domUpdates.displayPlayers(player1, player2, player3)
+    this.players.push(player1.name, player2.name, player3.name)
   }
 
   createCategories() {
@@ -49,7 +34,47 @@ class Game {
       }
       return this.categories.push(...randoms);
     }
+
+  getQuestions(categories) {
+   this.questions = categories.reduce((array, category) => {
+      let clues = data.clues.filter(clue => {
+        return clue.categoryId === data.categories[category]
+        })
+      array.push(...clues.slice(0, 5))
+      return array;
+    }, []).map(question => {
+    return new Question(question)
+    }) 
   }
+
+  matchQuestion(category, pointValue) {
+    this.questions.find(question => {
+      if (question.pointValue === pointValue
+          && question.categoryId === data.categories[category]) {
+        $('.question-window').css('z-index', '1')
+        question.question = $('question-window').text()
+      }
+    })
+  }
+}
+
+
+
+  // reset() {
+  // }
+
+  // updateRound() {
+  // }
+
+  // declareWinner() {
+  // }
+
+  // startNewRound() {
+  //   this.roundNumber++;
+  //   this.round = new Round();
+  // }
+
+
 
 
 if (typeof module !== 'undefined') {
