@@ -1,15 +1,18 @@
 class Player {
-  constructor(name, score) {
-    this.name = name
-    this.score = 0
+  constructor(name, turn, score) {
+    this.name = name;
+    this.score = 0;
+    this.turn = turn;
+  }
+
+  changePlayer() {
+    console.log('poo')
   }
 
   submitAnswer() {
   }
 
   submitWager() {
-  }
-
-  updateScore() {
+    
   }
 }

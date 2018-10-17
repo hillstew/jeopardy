@@ -7,10 +7,14 @@ class Question {
   }
 
   checkAnswer() {
+    let currentPlayer = game.players.find(player => {
+      return player.turn; 
+    })
     if ($('.answer-input').val() === this.answer){
-      
-    }
     $('.question-window').css('z-index', '-1');
+    }
+    currentPlayer.changePlayer()
+    currentPlayer.score += this.pointValue;
   }
 
 }

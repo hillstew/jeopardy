@@ -18,10 +18,10 @@ class Game {
     let playerOne = $('.player-one').val();
     let playerTwo = $('.player-two').val();
     let playerThree = $('.player-three').val();
-    let player1 = new Player(playerOne);
-    let player2 = new Player(playerTwo);
-    let player3 = new Player(playerThree);
-    this.players.push(player1.name, player2.name, player3.name)
+    player1 = new Player(playerOne, true);
+    player2 = new Player(playerTwo, false);
+    player3 = new Player(playerThree, false);
+    this.players.push(player1, player2, player3)
     domUpdates.displayPlayers(player1, player2, player3)
   }
 

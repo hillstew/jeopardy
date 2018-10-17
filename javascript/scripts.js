@@ -1,5 +1,7 @@
 let game = new Game();
-let round = new Round();
+let player1;
+let player2;
+let player3;
 
 $('.start-btn').on('click', () => {
   game.start();
