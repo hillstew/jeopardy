@@ -5,6 +5,14 @@ class Question {
     this.question = clue.question;
     this.pointValue = clue.pointValue;
   }
+
+  checkAnswer() {
+    if ($('.answer-input').val() === this.answer){
+      
+    }
+    $('.question-window').css('z-index', '-1');
+  }
+
 }
 
 class DailyDouble extends Question {

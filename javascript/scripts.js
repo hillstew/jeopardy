@@ -6,7 +6,6 @@ $('.start-btn').on('click', () => {
   game.createPlayers();
 })
 
-$('.answer-btn').on('click', game.removeWindow);
 
 
 $('.categories').on('click', (e) => {
@@ -14,8 +13,12 @@ $('.categories').on('click', (e) => {
   let pointValue = parseInt($(event.target).text());
   game.matchQuestion(category, pointValue);
   // $(e.target).text('');
-})
+});
 
+$('.answer-btn').on('click', (e) => {
+  game.matchedQuestion.checkAnswer()
+})
+  
 
 
 
