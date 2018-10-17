@@ -1,5 +1,11 @@
 const domUpdates = {
+  hideInputs() {
+    $('.player-one').hide()
+    $('.player-two').hide()
+    $('.player-three').hide()
+  },
   displayPlayers(player1, player2, player3) {
+    domUpdates.hideInputs();
     $('.player-one-card').text(player1.name);
     $('.player-two-card').text(player2.name);
     $('.player-three-card').text(player3.name);
