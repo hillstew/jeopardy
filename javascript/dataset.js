@@ -207,91 +207,91 @@ const data = {
 
     {
       question: "About this city's 1906 earthquake, Jack London wrote, \"Day was trying to dawn through the smoke pall",
-      value: 100,
+      pointValue: 100,
       answer: "San Francisco",
       categoryId: 8
     },
     {
       question: "This state capital lies on both banks of the Mississippi River at the confluence of the Minnesota River",
-      value: 200,
+      pointValue: 200,
       answer: "St. Paul",
       categoryId: 8
     },
     {
       question: "This city on Lake Michigan is \"The Beer Capital of America",
-      value: 300,
+      pointValue: 300,
       answer: "Milwaukee",
       categoryId: 8
     },
     {
       question: "This city near Disney World was given its present name in 1857 to honor a soldier killed in the Seminole Wars",
-      value: 400,
+      pointValue: 400,
       answer: "Orlando",
       categoryId: 8
     },
     {
       question: "Juarez, Mexico & this Texas city make up the largest metropolitan center on the U.S.-Mexico border",
-      value: 500,
+      pointValue: 500,
       answer: "El Paso",
       categoryId: 8
     },
     {
       question: "Earthquake City\" & \"Baghdad by the Bay\" are 2 nicknames of this California city",
-      value: 100,
+      pointValue: 100,
       answer: "San Francisco",
       categoryId: 8
     },
     {
       question: "The U.S.A.F. Academy is located outside this Colorado city home to the main U.S. Olympic Training Center",
-      value: 200,
+      pointValue: 200,
       answer: "Colorado Springs",
       categoryId: 8
     },
     {
       question: "Many visitors to the Big Apple fly into this city's Liberty Airport, maybe on Continental",
-      value: 300,
+      pointValue: 300,
       answer: "Newark",
       categoryId: 8
     },
     {
       question: "Cross and Sword\", Florida's official state play, was created to reenact this city's founding in 1565",
-      value: 400,
+      pointValue: 400,
       answer: "St. Augustine",
       categoryId: 8
     },
     {
       question: "In 1882 the Knights of Columbus was founded in this \"new\" Connecticut city",
-      value: 500,
+      pointValue: 500,
       answer: "New Haven",
       categoryId: 8
     },
     {
       question: "An earthquake on April 18, 1906 in this city destroyed the Wells Fargo Bank, but the vaults remained intact",
-      value: 100,
+      pointValue: 100,
       answer: "San Francisco",
       categoryId: 8
     },
     {
       question: "The MGM Grand Hotel in this city claims to be the largest in the world with over 5,000 guest rooms",
-      value: 200,
+      pointValue: 200,
       answer: "Las Vegas",
       categoryId: 8
     },
     {
       question: "The final draft of the U.S. Constitution was composed in this city in September 1787",
-      value: 300,
+      pointValue: 300,
       answer: "Philadelphia",
       categoryId: 8
     },
     {
       question: "The pirate Jean Lafitte was pardoned by President Madison for his help during the 1814 battle of this city",
-      value: 400,
+      pointValue: 400,
       answer: "New Orleans",
       categoryId: 8
     },
     {
       question: "Often placed in the bear family, the first giant panda in the U.S. was appropriately exhibited in this Midwest city",
-      value: 500,
+      pointValue: 500,
       answer: "Chicago",
       categoryId: 8
     },

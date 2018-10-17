@@ -1,15 +1,17 @@
 class Question {
-  constructor(catergoryId, answer, question, pointValue) {
-    this.catergoryId = catergoryId;
-    this.answer = answer;
-    this.question = question;
-    this.pointValue = pointValue;
+  constructor(clue) {
+    this.categoryId = clue.categoryId;
+    this.answer = clue.answer;
+    this.question = clue.question;
+    this.pointValue = clue.pointValue;
   }
+
+
 }
 
 class DailyDouble extends Question {
-  constructor(catergoryId, answer, question, pointValue) {
-    super(catergoryId, answer, question, pointValue)
+  constructor(clue) {
+    super(clue)
   }
   checkUserMinimum() {
 
