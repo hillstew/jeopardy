@@ -60,18 +60,17 @@ class Game {
       array.push(...clues.slice(0, 5))
       return array;
     }, []).map(question => {
-      return new Question(question)
+      return new Question(question);
     });
   }
 
   matchQuestion(category, pointValue) {
    this.matchedQuestion = this.questions.find(question => {
       return question.pointValue === pointValue
-          && question.categoryId === data.categories[category]
+      && question.categoryId === data.categories[category]
     });
-        $('.question-window').css('z-index', '1');
-        $('.question-clue').text(this.matchedQuestion.question);
-   console.log(this.matchedQuestion)
+      $('.question-window').css('z-index', '1');
+      $('.question-clue').text(this.matchedQuestion.question);
   }
 }
 

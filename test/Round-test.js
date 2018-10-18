@@ -5,14 +5,14 @@ const Round = require('../javascript/Round.js');
 const spies = require('chai-spies')
 chai.use(spies);
 
-describe('Round', () => {
-  let round;
-  beforeEach(() => {
-    round = new Round;
-  })
+// describe('Round', () => {
+//   let round;
+//   beforeEach(() => {
+//     round = new Round;
+//   })
 
-  it('should create questions based off categories', () => {
-    round.getQuestions();
-  })
+//   it('should create questions based off categories', () => {
+//     round.getQuestions();
+//   })
 
-})
+// })
