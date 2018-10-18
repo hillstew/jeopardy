@@ -18,7 +18,9 @@ $('.answer-btn').on('click', () => {
   game.matchedQuestion.checkAnswer()
 });
   
-
+$('.end-btn').on('click', () => {
+  location.reload();
+});
 
 
 
