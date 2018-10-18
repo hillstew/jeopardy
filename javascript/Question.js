@@ -10,15 +10,14 @@ class Question {
     let currentPlayer = game.players.find(player => {
       return player.turn; 
     })
-    if ($('.answer-input').val() === this.answer){
-    currentPlayer.score += this.pointValue;
+    if ($('.question-answer-input').val() === this.answer) {
+      currentPlayer.score += this.pointValue;
     } else {
       currentPlayer.score -= this.pointValue;
     }
     $('.question-window').css('z-index', '-1');
     game.changePlayer(currentPlayer)
   }
-
 }
 
 class DailyDouble extends Question {

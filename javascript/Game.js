@@ -18,9 +18,9 @@ class Game {
     let playerOne = $('.player-one').val();
     let playerTwo = $('.player-two').val();
     let playerThree = $('.player-three').val();
-    player1 = new Player(playerOne, true);
-    player2 = new Player(playerTwo, false);
-    player3 = new Player(playerThree, false);
+    let player1 = new Player(playerOne, true);
+    let player2 = new Player(playerTwo, false);
+    let player3 = new Player(playerThree, false);
     this.players.push(player1, player2, player3)
     domUpdates.displayPlayers(player1, player2, player3)
     domUpdates.displayScore(player1, player2, player3)
@@ -45,7 +45,6 @@ class Game {
     this.players[currentIndex].turn = false;
     if ((currentIndex + 1) >= this.players.length) {
       currentIndex = 0;
-
     } else {
       currentIndex += 1;
     }
@@ -65,12 +64,12 @@ class Game {
   }
 
   matchQuestion(category, pointValue) {
-   this.matchedQuestion = this.questions.find(question => {
+    this.matchedQuestion = this.questions.find(question => {
       return question.pointValue === pointValue
       && question.categoryId === data.categories[category]
     });
-      $('.question-window').css('z-index', '1');
-      $('.question-clue').text(this.matchedQuestion.question);
+    $('.question-window').css('z-index', '1');
+    $('.question-clue').text(this.matchedQuestion.question);
   }
 }
 

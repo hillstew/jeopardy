@@ -7,9 +7,9 @@ const domUpdates = {
   displayPlayers(player1, player2, player3) {
     domUpdates.hideInputs();
     domUpdates.displayCards();
-    $('.player-one-card').text(player1.name);
-    $('.player-two-card').text(player2.name);
-    $('.player-three-card').text(player3.name);
+    $('.player-one-card').text(`NAME: ${player1.name}`);
+    $('.player-two-card').text(`NAME: ${player2.name}`);
+    $('.player-three-card').text(`NAME: ${player3.name}`);
   },
   displayScore(player1, player2, player3) {
     $('.player-one-score').text(`SCORE: ${player1.score}`)
@@ -25,7 +25,6 @@ const domUpdates = {
   displayCards() {
     $('.player-cards').css('display', 'inline');
   }
-
 }
 
 
