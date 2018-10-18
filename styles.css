@@ -10,9 +10,12 @@ header {
   font-size: 4em;
 }
 
-.players-cards {
+.player-cards {
   border: 2px solid tomato;
   border-radius: 20px;
+  color: #FFFFFF;
+  display: none;
+  font-size: 20px; 
   height: 100px;
   margin: 2%;
   width: 200px;
@@ -99,7 +102,7 @@ header {
 .players {
   border: transparent;
   border-radius: 5px;
-  display: inline;
+  /*display: none;*/
   font-size: 16px;
   height: 30px;
   margin: 0 50px;
@@ -135,7 +138,7 @@ section {
   justify-content: center;
   left: 5%;
   position: absolute;
-  top: 40%;
+  top: 45%;
   width: 90%;
   z-index: -1;
 }
