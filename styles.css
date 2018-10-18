@@ -117,6 +117,18 @@ section {
   cursor: pointer;
 }
 
+.question-no-hover {
+  background-color: #112957;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  color: #e6e7ec;
+  font-size: 2em;
+  margin: 25px 25px;
+  padding: 25px 25px;
+  text-align: center;
+  width: 230px;
+}
+
 .question-window {
   align-items: center;
   background-color: tomato;
