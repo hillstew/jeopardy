@@ -40,7 +40,7 @@ class Game {
   }
 
   changePlayer(player) {
-    let currentIndex = this.players.indexOf(player)
+    let currentIndex = this.players.indexOf(player);
     this.players[currentIndex].turn = false;
     if ((this.players + 1) >= this.players.length) {
       currentIndex = 0;
@@ -59,16 +59,8 @@ class Game {
       return array;
     }, []).map(question => {
       return new Question(question)
-  // question is not defined
     });
   }
-
-  // checkAnswer(question) {
-  //   if ($('.answer-input').val() === question.answer) {
-      
-  //   }
-  //   $('.question-window').css('z-index', '-1');
-  // }
 
   matchQuestion(category, pointValue) {
    this.matchedQuestion = this.questions.find(question => {
@@ -80,22 +72,6 @@ class Game {
    console.log(this.matchedQuestion)
   }
 }
-
-
-
-  // reset() {
-  // }
-
-  // updateRound() {
-  // }
-
-  // declareWinner() {
-  // }
-
-  // startNewRound() {
-  //   this.roundNumber++;
-  //   this.round = new Round();
-  // }
 
 
 

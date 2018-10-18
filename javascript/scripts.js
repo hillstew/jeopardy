@@ -9,7 +9,6 @@ $('.start-btn').on('click', () => {
 })
 
 
-
 $('.categories').on('click', (e) => {
   let category = $(e.target).siblings('.category-cards').text();
   let pointValue = parseInt($(event.target).text());
