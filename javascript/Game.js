@@ -23,6 +23,7 @@ class Game {
     player3 = new Player(playerThree, false);
     this.players.push(player1, player2, player3)
     domUpdates.displayPlayers(player1, player2, player3)
+    domUpdates.displayScore(player1, player2, player3)
   }
 
   createCategories() {
@@ -44,6 +45,7 @@ class Game {
     this.players[currentIndex].turn = false;
     if ((currentIndex + 1) >= this.players.length) {
       currentIndex = 0;
+
     } else {
       currentIndex += 1;
     }
