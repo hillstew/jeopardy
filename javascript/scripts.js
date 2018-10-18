@@ -1,12 +1,9 @@
 let game = new Game();
-let player1;
-let player2;
-let player3;
 
 $('.start-btn').on('click', () => {
   game.start();
   game.createPlayers();
-})
+});
 
 $('.categories').on('click', (e) => {
   let category = $(e.target).siblings('.category-cards').text();
@@ -14,9 +11,9 @@ $('.categories').on('click', (e) => {
   game.matchQuestion(category, pointValue);
 });
 
-$('.answer-btn').on('click', (e) => {
+$('.answer-btn').on('click', () => {
   game.matchedQuestion.checkAnswer()
-})
+});
   
 
 

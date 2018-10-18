@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JEOPARDY!</title>
+  <title>!JEOPARDY</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,900" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="question-window">
-    <p class="question-clue"></p>
-    <div class="question-div">
-      <input class="answer-input" type="text" name="Answer" placeholder=" ENTER YOUR ANSWER HERE">
-      <button class="answer-btn">SUBMIT</button>
-    </div>
-  </div>
-  <header>JEOPARDY!</header>
-  <section class="players-list">
+  <header>!JEOPARDY</header>
+  <section class="players-section">
     <div class="player-cards">
-      <p class="player-one-card">NAME: Hillary</p>
+      <p class="player-one-card"></p>
       <p class="player-one-score players-scoreCards"></p>
     </div>
-      <input class='player-one players' placeholder="PLAYER 1" name="Player 1">
+    <input class="player-one players" placeholder="PLAYER 1" name="Player 1">
     <div class="player-cards">
-      <p class="player-two-card">NAME: Hillary</p>
+      <p class="player-two-card"></p>
       <p class="player-two-score players-scoreCards"></p>
     </div>
-      <input class='player-two players' placeholder="PLAYER 2" name="Player 2">
+    <input class="player-two players" placeholder="PLAYER 2" name="Player 2">
     <div class="player-cards">
-      <p class="player-three-card">NAME: Hillary</p>
-      <p class="player-three-score players-scorescoreCards"></p>
+      <p class="player-three-card"></p>
+      <p class="player-three-score players-scoreCards"></p>
     </div>
-      <input class='player-three players' placeholder="PLAYER 3" name="Player 3">
+    <input class="player-three players" placeholder="PLAYER 3" name="Player 3">
   </section>
   <div class="btn-wrap" role="button wrapper for styling">
     <button class="start-btn">START</button>
@@ -70,17 +66,16 @@
     <li class="question-cards">500</li>
   </ul>
 </section>
-
-
+  <div class="question-window">
+    <p class="question-clue"></p>
+    <div class="question-div">
+      <input class="question-answer-input" type="text" name="Answer" placeholder=" ENTER YOUR ANSWER HERE">
+      <button class="answer-btn">SUBMIT</button>
+    </div>
+  </div>
 </body>
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
   <script type="text/javascript" src="javascript/dataset.js"></script>
   <script type="text/javascript" src="javascript/domUpdates.js"></script>
-  <script type="text/javascript" src="javascript/Round.js"></script>
   <script type="text/javascript" src="javascript/Player.js"></script>
   <script type="text/javascript" src="javascript/Game.js"></script>
   <script type="text/javascript" src="javascript/Question.js"></script>

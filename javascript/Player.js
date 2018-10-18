@@ -5,10 +5,6 @@ class Player {
     this.turn = turn;
   }
 
-  submitAnswer() {
-  }
-
   submitWager() {
-    
   }
 }
