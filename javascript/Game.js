@@ -42,7 +42,7 @@ class Game {
   changePlayer(player) {
     let currentIndex = this.players.indexOf(player);
     this.players[currentIndex].turn = false;
-    if ((this.players + 1) >= this.players.length) {
+    if ((currentIndex + 1) >= this.players.length) {
       currentIndex = 0;
     } else {
       currentIndex += 1;
