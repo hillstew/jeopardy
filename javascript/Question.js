@@ -33,3 +33,7 @@ class DailyDouble extends Question {
   }
 }
 
+
+if (typeof module !== 'undefined') {
+  module.exports = Question;
+}
