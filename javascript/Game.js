@@ -18,12 +18,12 @@ class Game {
     let playerOne = $('.player-one').val();
     let playerTwo = $('.player-two').val();
     let playerThree = $('.player-three').val();
-    let player1 = new Player(playerOne, true);
-    let player2 = new Player(playerTwo, false);
-    let player3 = new Player(playerThree, false);
-    this.players.push(player1, player2, player3)
-    domUpdates.displayPlayers(player1, player2, player3)
-    domUpdates.displayScore(player1, player2, player3)
+    player1 = new Player(playerOne, true);
+    player2 = new Player(playerTwo, false);
+    player3 = new Player(playerThree, false);
+    this.players.push(player1, player2, player3);
+    domUpdates.displayPlayers(player1, player2, player3);
+    domUpdates.displayScore(player1, player2, player3);
   }
 
   createCategories() {

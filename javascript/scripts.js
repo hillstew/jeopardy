@@ -1,3 +1,6 @@
+let player1;
+let player2;
+let player3;
 let game = new Game();
 
 $('.start-btn').on('click', () => {

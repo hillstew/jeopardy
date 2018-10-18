@@ -17,6 +17,7 @@ class Question {
     }
     $('.question-window').css('z-index', '-1');
     game.changePlayer(currentPlayer)
+    domUpdates.displayScore(player1, player2, player3)
   }
 }
 
