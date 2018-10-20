@@ -14,9 +14,9 @@ const data = {
     'educationJargon': 4,
     'nameThatBoardGame': 5,
     'americanLiterature': 6,
-    'biographies': 7,
+    'Biographies': 7,
     'americanCities': 8,
-    'food': 9,
+    'Food': 9,
     'cableTV': 10
   },
   clues: [

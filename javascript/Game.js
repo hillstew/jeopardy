@@ -1,11 +1,11 @@
 class Game {
   constructor(round, players, winner) {
-    this.roundNumber = 0;
+    this.roundNumber = 1;
     this.players = [];
     this.winner = winner;
     this.categories = [];
     this.questions = [];
-    this.matchedQuestion = undefined;
+    this.matchedQuestion = null;
   }
 
   start() {
@@ -27,10 +27,10 @@ class Game {
   }
 
   createCategories() {
-    let categoryKeys = Object.keys(data.categories);
+    let categoryNames = Object.keys(data.categories);
     let randoms = [];
-    for (var i = 0; i < categoryKeys.length; i++) {
-      let rand = categoryKeys[Math.floor(Math.random() * categoryKeys.length)]
+    for (var i = 0; i < categoryNames.length; i++) {
+      let rand = categoryNames[Math.floor(Math.random() * categoryNames.length)]
       if (!randoms.includes(rand)) {
         randoms.push(rand)
       } if (randoms.length > 4) {
@@ -61,6 +61,10 @@ class Game {
     }, []).map(question => {
       return new Question(question);
     });
+    const randIndex = Math.floor(Math.random() * this.questions.length)
+    let randomDaily = this.questions[randIndex];
+    this.dailyDouble = new DailyDouble(randomDaily);
+    this.questions[randIndex] = this.dailyDouble;
   }
 
   matchQuestion(category, pointValue) {
@@ -68,12 +72,9 @@ class Game {
       return question.pointValue === pointValue
       && question.categoryId === data.categories[category]
     });
-    $('.question-window').css('z-index', '1');
-    $('.question-clue').text(this.matchedQuestion.question);
+    domUpdates.matchDomQuestion(this.matchedQuestion);
   }
 }
-
-
 
 
 if (typeof module !== 'undefined') {

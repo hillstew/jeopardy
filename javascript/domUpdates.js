@@ -24,9 +24,19 @@ const domUpdates = {
   },
   displayCards() {
     $('.player-cards').css('display', 'inline');
+  },
+  matchDomQuestion(matchedQuestion) {
+    $('.question-window').css('z-index', '1');
+    if (matchedQuestion.dailyDouble) {
+      $('.wager-btn').css('display', 'inline');
+      $('.wager-input').css('display', 'inline');
+    } else {
+      $('.wager-btn').css('display', 'none');
+      $('.wager-input').css('display', 'none');
+    }
+    $('.question-clue').text(matchedQuestion.question);
   }
 }
-
 
 
 
