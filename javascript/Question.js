@@ -24,10 +24,9 @@ class Question {
 class DailyDouble extends Question {
   constructor(clue) {
     super(clue)
+    this.dailyDouble = true;
   }
-  checkUserMinimum() {
 
-  }
   checkWagerValidity() {
     
   }
