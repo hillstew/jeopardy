@@ -1,6 +1,9 @@
-body {
-  background-color: #001C43;
+* {
   font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: #001C43;
   margin: 0;
 }
 
@@ -12,7 +15,7 @@ header {
 }
 
 section {
-  background-color: #001C43;
+  background: #001C43;
   display: flex;
   justify-content: center;
 }
@@ -45,16 +48,17 @@ section {
 
 .btn-wrap {
   align-items: center;
-  background-color: #001C43;
+  background: #001C43;
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
 
 .start-btn, .end-btn {
-  border: transparent;
+  background: tomato;
+  color: #fff;
+  border: none;
   border-radius: 5px;
-  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   height: 30px;
   margin: 5px;
@@ -64,21 +68,21 @@ section {
 .start-btn:hover, 
 .end-btn:hover {
   cursor: pointer;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .start-btn:hover {
-  background-color: green;
+  background: green;
 }
 
 .end-btn:hover {
-  background-color: red;
+  background: red;
 }
 
 .round-display {
-  background-color: tomato;
+  background: #fff;
   border-radius: 5px;
-  color: #FFFFFF;
+  color: #001C43;
   font-size: 1.4em;
   font-weight: 900;
   height: 30px;
@@ -162,7 +166,6 @@ section {
   border: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  font-family: 'Nunito', sans-serif;
   font-size: 20px;
   height: 48px;
   width: 400px;
@@ -175,7 +178,6 @@ section {
   border-bottom-right-radius: 20px;
   color: #FFFFFF;
   height: 50px;
-  font-family: 'Nunito', sans-serif;
   font-size: 1.4rem;
   padding-top: 2px;
   width: 200px;
