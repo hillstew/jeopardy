@@ -18,15 +18,14 @@ $('.categories').on('click', (e) => {
 });
 
 $('.answer-btn').on('click', () => {
-  game.matchedQuestion.checkAnswer()
+  console.log(game.roundNumber++);
+  game.matchedQuestion.checkAnswer();
+  game.newRound(game.round);
 });
   
 $('.end-btn').on('click', () => {
   location.reload();
 });
-
-
-
 
 
 
