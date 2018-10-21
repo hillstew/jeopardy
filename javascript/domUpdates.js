@@ -35,6 +35,15 @@ const domUpdates = {
       $('.wager-input').css('display', 'none');
     }
     $('.question-clue').text(matchedQuestion.question);
+  },
+  updateRound(round) {
+    $('.round-display').text(`ROUND 2`)
+  },
+  displayCategories2(categories) {
+    $('.category-card-one').text(categories[7]);
+    $('.category-card-two').text(categories[6]);
+    $('.category-card-three').text(categories[5]);
+    $('.category-card-four').text(categories[4]);
   }
 }
 

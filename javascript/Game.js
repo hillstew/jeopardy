@@ -74,6 +74,16 @@ class Game {
     });
     domUpdates.matchDomQuestion(this.matchedQuestion);
   }
+
+  newRound(round){
+    if (this.roundNumber > 20) {
+      this.createCategories();
+      this.getQuestions(this.categories);
+      domUpdates.displayCategories2(this.categories);
+      domUpdates.updateRound(this.roundNumber);
+      this.roundNumber = 1;
+    }
+  }
 }
 
 
