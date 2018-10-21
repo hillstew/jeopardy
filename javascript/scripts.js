@@ -13,12 +13,12 @@ $('.categories').on('click', (e) => {
   let pointValue = parseInt($(event.target).text());
   game.matchQuestion(category, pointValue);
   $(e.target).text('X');
-  $(e.target).removeClass('question-cards')
-  $(e.target).addClass('question-no-hover')
+  $(e.target).removeClass('question-cards');
+  $(e.target).addClass('question-no-hover');
 });
 
 $('.answer-btn').on('click', () => {
-  console.log(game.roundNumber++);
+  game.roundNumber++;
   game.matchedQuestion.checkAnswer();
   game.newRound(game.round);
 });

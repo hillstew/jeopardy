@@ -61,7 +61,7 @@ class Game {
     }, []).map(question => {
       return new Question(question);
     });
-    const randIndex = Math.floor(Math.random() * this.questions.length)
+    const randIndex = Math.floor(Math.random() * this.questions.length);
     let randomDaily = this.questions[randIndex];
     this.dailyDouble = new DailyDouble(randomDaily);
     this.questions[randIndex] = this.dailyDouble;
