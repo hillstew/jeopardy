@@ -22,11 +22,18 @@ const domUpdates = {
     $('.category-card-three').text(categories[2]);
     $('.category-card-four').text(categories[3]);
   },
+  displayCategories2(categories) {
+    $('.category-card-one').text(categories[7]);
+    $('.category-card-two').text(categories[6]);
+    $('.category-card-three').text(categories[5]);
+    $('.category-card-four').text(categories[4]);
+  },
   displayCards() {
     $('.player-cards').css('display', 'inline');
   },
   matchDomQuestion(matchedQuestion) {
     $('.question-window').css('z-index', '1');
+    $('.question-clue').text(matchedQuestion.question);
     if (matchedQuestion.dailyDouble) {
       $('.wager-btn').css('display', 'inline');
       $('.wager-input').css('display', 'inline');
@@ -34,16 +41,19 @@ const domUpdates = {
       $('.wager-btn').css('display', 'none');
       $('.wager-input').css('display', 'none');
     }
-    $('.question-clue').text(matchedQuestion.question);
   },
   updateRound(round) {
-    $('.round-display').text(`ROUND 2`)
-  },
-  displayCategories2(categories) {
-    $('.category-card-one').text(categories[7]);
-    $('.category-card-two').text(categories[6]);
-    $('.category-card-three').text(categories[5]);
-    $('.category-card-four').text(categories[4]);
+    $('.round-display').text(`ROUND 2`);
+    let currentPoint = 100;
+    $('[data-question]').each((index, item, c) => {
+      item.innerText = currentPoint;
+      $(item).attr('class', 'question-cards');
+      if (currentPoint < 500) {
+        currentPoint += 100;
+      } else {
+        currentPoint = 100;
+      }
+    });
   }
 }
 
