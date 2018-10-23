@@ -1,17 +1,20 @@
 const chai = require('chai');
 const expect = chai.expect;
-const Question = require('../javascript/Question.js')
+global.data = require('../javascript/dataset.js');
+const Question = require('../javascript/Question.js');
 const Game = require('../javascript/Game.js');
-const spies = require('chai-spies')
+const Player = require('../javascript/Player.js');
+const spies = require('chai-spies');
 chai.use(spies);
 
 describe('Game', () => {
   let game;
   beforeEach(() => {
-    game = new Game;
+    game = new Game();
+
   });
 
-  it.skip('should start the game', () => {
+  it('should start the game', () => {
     game.start();
     expect(game.createCategories).to.have.been.called(1);
     expect(game.getQuestions).to.have.been.called(1);
@@ -30,18 +33,22 @@ describe('Game', () => {
   });
 
   it('should change player turn', () => {
-    game.changePlayer(player);
-    game.changePlayer(player);
-    game.changePlayer(player);
+    let player1 = new Player('name', true);
+    game.changePlayer(player1);
+    game.changePlayer(player2);
+    game.changePlayer(player3);
     expect(currentPlayer(player)).to.equal(true)
   });
 
   it('should return twenty questions', () => {
+    let categories = ["lifeSciences", "unitedStatesHistory", "educationJargon", "Biographies"]
     game.getQuestions(categories);
     expect(game.questions.length).to.equal(20)
   });
 
   it('should match question to category', () => {
+    let category = 'lifeSciences';
+    let pointValue = 200;
     game.matchQuestion(category, pointValue);
     expect(game.matchedQuestion.category).to.equal(category);
     expect(game.matchedQuestion.pointValue).to.equal(pointValue);

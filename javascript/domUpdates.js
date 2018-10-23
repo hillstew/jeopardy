@@ -44,14 +44,14 @@ const domUpdates = {
   },
   updateRound(round) {
     $('.round-display').text(`ROUND 2`);
-    let currentPoint = 100;
+    let currentPoint = 200;
     $('[data-question]').each((index, item, c) => {
       item.innerText = currentPoint;
       $(item).attr('class', 'question-cards');
-      if (currentPoint < 500) {
-        currentPoint += 100;
+      if (currentPoint < 1000) {
+        currentPoint += 200;
       } else {
-        currentPoint = 100;
+        currentPoint = 200;
       }
     });
   }
