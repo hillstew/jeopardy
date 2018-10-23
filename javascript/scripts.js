@@ -18,7 +18,6 @@ $('.categories').on('click', (e) => {
 });
 
 $('.answer-btn').on('click', () => {
-  game.roundNumber++;
   game.matchedQuestion.checkAnswer();
   game.newRound(game.round);
 });

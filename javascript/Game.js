@@ -1,3 +1,9 @@
+// const Question = require('../javascript/Question.js');
+// const Player = require('../javascript/Player.js');
+// const DailyDouble = require('../javascript/Question.js');
+// const data = require('../javascript/dataset.js');
+
+
 class Game {
   constructor(round, players, winner) {
     this.roundNumber = 1;
@@ -9,9 +15,9 @@ class Game {
   }
 
   start() {
-    this.createCategories()
-    this.getQuestions(this.categories)
-    domUpdates.displayCategories(this.categories)
+    this.createCategories();
+    this.getQuestions(this.categories);
+    domUpdates.displayCategories(this.categories);
   }
 
   createPlayers() {

@@ -5,3 +5,8 @@ class Player {
     this.turn = turn;
   }
 }
+
+
+if (typeof module !== 'undefined') {
+  module.exports = Player;
+}
